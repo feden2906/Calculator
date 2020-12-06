@@ -3,6 +3,7 @@ import './Calculator.css'
 import Title from "./title/Title";
 import Result from "./result/Result";
 import BtnWrapper from "./btnWrapper/BtnWrapper";
+import InputWrapper from "./inputWrapper/InputWrapper";
 
 
 class Calculator extends Component {
@@ -26,9 +27,13 @@ class Calculator extends Component {
     const {result} = this.state
     let userNum = parseFloat(e.target.previousSibling.value)
     if (!isNaN(userNum)) {
-      this.setState({result: (result + userNum)})
+      const value = result + userNum
+      value > 0
+          ? this.setState({result: value})
+          : this.setState({result: 0})
     }
   }
+
 
   render() {
     const {result} = this.state
@@ -37,15 +42,7 @@ class Calculator extends Component {
           <Title/>
           <Result result={result}/>
           <BtnWrapper plus={this.plus} minus={this.minus} reset={this.reset}/>
-
-
-
-
-          <div className='input-wrapper'>
-            <p><b>Число:</b></p>
-            <input className='input'/>
-            <button onClick={this.addYourNum} className='btn'>Submit</button>
-          </div>
+          <InputWrapper addYourNum={this.addYourNum}/>
         </div>
     );
   }

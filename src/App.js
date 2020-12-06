@@ -3,10 +3,10 @@ import './App.css'
 import Calculator from "./components/calculator/Calculator";
 
 class App extends Component {
-  render() {
+    render() {
     return (
         <div className='wrapper'>
-          <Calculator/>
+          <Calculator />
         </div>
     );
   }

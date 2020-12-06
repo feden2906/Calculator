@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="917d5312-c923-4728-b5d3-3299a115ea17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/calculator/btnWrapper/BtnWrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/calculator/result/Result.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/calculator/result/Result.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/calculator/title/Title.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/calculator/title/Title.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/calculator/inputWrapper/InputWrapper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/calculator/inputWrapper/InputWrapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/services/CalculatorServices.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculator/Calculator.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calculator/Calculator.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculator/Calculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calculator/Calculator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculator/plusOne/PlusOne.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calculator/btnWrapper/BtnWrapper.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculator/plusOne/PlusOne.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/calculator/Calculator.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calculator/Calculator.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/calculator/Calculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calculator/Calculator.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -53,6 +49,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\STUDY\React OktenWeb\calculator\src\components\services" />
       <recent name="D:\STUDY\React OktenWeb\calculator\src\components\calculator" />
       <recent name="D:\STUDY\React OktenWeb\calculator\src\components" />
       <recent name="D:\STUDY\React OktenWeb\calculator\src" />
@@ -83,7 +80,8 @@
       <updated>1607094987633</updated>
       <workItem from="1607094990502" duration="13362000" />
       <workItem from="1607166260476" duration="1810000" />
-      <workItem from="1607257859730" duration="11531000" />
+      <workItem from="1607257859730" duration="12302000" />
+      <workItem from="1607284569794" duration="4730000" />
     </task>
     <servers />
   </component>

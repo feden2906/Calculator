@@ -8,21 +8,3 @@
     padding: 30px 40px;
 }
 
-
-
-.input-wrapper {
-    display: flex;
-    align-items: center;
-    width: 90%;
-    font-size: 21px;
-    margin: 0 auto;
-}
-
-.input{
-    height: 30px;
-    width: 35%;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 20px;
-    padding: 2px 7px;
-}
