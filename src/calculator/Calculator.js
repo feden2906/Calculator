@@ -15,13 +15,21 @@ class Calculator extends Component {
   minus = () => {
     const {result} = this.state
     const value = result - 1
-    this.setState({result: value})
+    if (value > 0) {
+      this.setState({result: value})
+    } else {
+      this.setState({result: 0})
+    }
   }
 
   minus100 = () => {
     const {result} = this.state
     const value = result - 100
-    this.setState({result: value})
+    if (value > 0) {
+      this.setState({result: value})
+    } else {
+      this.setState({result: 0})
+    }
   }
 
   plus100 = () => {
@@ -34,8 +42,12 @@ class Calculator extends Component {
 
   addYourNum = (e) => {
     const {result} = this.state
-    const value = result + (+e.target.previousSibling.value)
-    this.setState({result: value})
+    let userNum = parseInt(e.target.previousSibling.value)
+
+    if (!isNaN(userNum)) {
+      const value = result + userNum
+      this.setState({result: value})
+    }
   }
 
   render() {
