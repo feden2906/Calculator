@@ -8,7 +8,7 @@ import InputWrapper from "./inputWrapper/InputWrapper";
 
 class Calculator extends Component {
 
-  state = {result: 0};
+  state = {result: 0, inputValue: ''};
   arrNums = [1, -1, 100, -100];
 
   plus_minus = (num) => {
@@ -19,16 +19,20 @@ class Calculator extends Component {
         : this.setState({result: 0})
   }
   reset = () => this.setState({result: 0})
-  addYourNum = (e) => {
-    const {result} = this.state
-    let userNum = parseFloat(e.target.previousSibling.value)
-    e.target.previousSibling.value = ''
-    if (!isNaN(userNum)) {
-      const value = result + userNum
+
+  addYourNum = () => {
+    const {result, inputValue} = this.state
+    const nam = +inputValue
+    if (!isNaN(nam)) {
+      const value = result + nam
       value > 0
           ? this.setState({result: value})
           : this.setState({result: 0})
     }
+    this.setState({inputValue: ''})
+  }
+  addNauToState = (value) => {
+    this.setState({inputValue: value})
   }
 
   render() {
@@ -38,7 +42,7 @@ class Calculator extends Component {
           <Title/>
           <Result result={result}/>
           <BtnWrapper plus_minus={this.plus_minus} reset={this.reset} arrNums={this.arrNums}/>
-          <InputWrapper addYourNum={this.addYourNum}/>
+          <InputWrapper addYourNum={this.addYourNum} addNauToState={this.addNauToState}/>
         </div>
     );
   }
